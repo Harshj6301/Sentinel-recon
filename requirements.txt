@@ -1,0 +1,10 @@
+flair
+pdfplumber
+duckduckgo_search
+pandas
+re
+requests
+io
+bs4
+urllib3
+googlesearch
