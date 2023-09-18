@@ -29,6 +29,9 @@ model Order {
   quantity   Int?
   totalPrice Int?
   updatedAt  DateTime  @updatedAt
+  username   String    @unique
+  password   String
+  roles      Json
 }
 
 model Customer {

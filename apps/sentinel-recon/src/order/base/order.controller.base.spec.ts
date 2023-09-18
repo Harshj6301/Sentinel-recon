@@ -25,6 +25,8 @@ const CREATE_INPUT = {
   quantity: 42,
   totalPrice: 42,
   updatedAt: new Date(),
+  username: "exampleUsername",
+  password: "examplePassword",
 };
 const CREATE_RESULT = {
   createdAt: new Date(),
@@ -33,6 +35,8 @@ const CREATE_RESULT = {
   quantity: 42,
   totalPrice: 42,
   updatedAt: new Date(),
+  username: "exampleUsername",
+  password: "examplePassword",
 };
 const FIND_MANY_RESULT = [
   {
@@ -42,6 +46,8 @@ const FIND_MANY_RESULT = [
     quantity: 42,
     totalPrice: 42,
     updatedAt: new Date(),
+    username: "exampleUsername",
+    password: "examplePassword",
   },
 ];
 const FIND_ONE_RESULT = {
@@ -51,6 +57,8 @@ const FIND_ONE_RESULT = {
   quantity: 42,
   totalPrice: 42,
   updatedAt: new Date(),
+  username: "exampleUsername",
+  password: "examplePassword",
 };
 
 const service = {

@@ -9,4 +9,7 @@ export type OrderOrderByInput = {
   quantity?: SortOrder;
   totalPrice?: SortOrder;
   updatedAt?: SortOrder;
+  username?: SortOrder;
+  password?: SortOrder;
+  roles?: SortOrder;
 };

@@ -2,8 +2,8 @@ import { UnauthorizedException } from "@nestjs/common";
 import { PassportStrategy } from "@nestjs/passport";
 import { ExtractJwt, Strategy } from "passport-jwt";
 import { IAuthStrategy } from "../../IAuthStrategy";
-import { UserInfo } from "../../UserInfo";
-import { UserService } from "../../../user/user.service";
+import { OrderInfo } from "../../OrderInfo";
+import { OrderService } from "../../../order/order.service";
 
 export class JwtStrategyBase
   extends PassportStrategy(Strategy)
@@ -11,7 +11,7 @@ export class JwtStrategyBase
 {
   constructor(
     protected readonly secretOrKey: string,
-    protected readonly userService: UserService
+    protected readonly orderService: OrderService
   ) {
     super({
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
@@ -20,9 +20,9 @@ export class JwtStrategyBase
     });
   }
 
-  async validate(payload: UserInfo): Promise<UserInfo> {
+  async validate(payload: OrderInfo): Promise<OrderInfo> {
     const { username } = payload;
-    const user = await this.userService.findOne({
+    const user = await this.orderService.findOne({
       where: { username },
     });
     if (!user) {

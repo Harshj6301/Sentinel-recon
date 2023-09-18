@@ -84,6 +84,8 @@ export class OrderControllerBase {
         quantity: true,
         totalPrice: true,
         updatedAt: true,
+        username: true,
+        roles: true,
       },
     });
   }
@@ -125,6 +127,8 @@ export class OrderControllerBase {
         quantity: true,
         totalPrice: true,
         updatedAt: true,
+        username: true,
+        roles: true,
       },
     });
   }
@@ -167,6 +171,8 @@ export class OrderControllerBase {
         quantity: true,
         totalPrice: true,
         updatedAt: true,
+        username: true,
+        roles: true,
       },
     });
     if (result === null) {
@@ -232,6 +238,8 @@ export class OrderControllerBase {
           quantity: true,
           totalPrice: true,
           updatedAt: true,
+          username: true,
+          roles: true,
         },
       });
     } catch (error) {
@@ -282,6 +290,8 @@ export class OrderControllerBase {
           quantity: true,
           totalPrice: true,
           updatedAt: true,
+          username: true,
+          roles: true,
         },
       });
     } catch (error) {
